@@ -1,0 +1,14 @@
+ridge_plots20190826
+reads point data from "D:\\sfmr_08272019\\tables\\points20190826.csv"
+This came from water08262019_points
+These points extracted values from ortho images at: D:\sfork20190826\products\orthophotos\
+water08262019_points came from randomly generating 100 points for water08262019mos_Clip
+SFork_Clip was used to clip water08262019
+NOTE
+SFork_clip is whole extent of phase1 including area that was imaged over two days for 08/26/2019
+SFork_clip_mod is only the area imaged on 08/26/2019 (2/3 of phase 1), only 4 points were outside of mod
+
+tir19WetMaskM and tir21wetMaskM were extracted using their relative wetted cells form ndwi and clipped with the SFork_Clip area
+These are the ones I should convret with formula from cooler tests
+
+tir09wetMask is the historic channel minus the buffer area (-1 m). 

@@ -1,0 +1,19 @@
+﻿import os
+path = "D:\\thermal_test20231010\\photos_20231010"
+dir_list = os.listdir(path)
+print(dir_list)
+arcpy.env.workspace = "D:\\thermal_test20231010"
+inPointFeatures = "point.shp"
+arcpy.sa.ExtractMultiValuesToPoints(inPointFeatures, dir_list)
+full_dirs = []
+for file in dir_list:     full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file)     full_dirs.append(full_file)
+print(full_dirs)
+arcpy.sa.ExtractMultiValuesToPoints(inPointFeatures, full_dirs)
+path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010" inPointFeatures = "point.shp"  for file in dir_list:     full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file)     full_dirs.append(full_file) 	 arcpy.sa.ExtractMultiValuesToPoints(inPointFeatures, full_dirs)
+path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010" inPointFeatures = "point.shp"  full_dirs = []  for file in dir_list:     full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file)     full_dirs.append(full_file) 	 arcpy.sa.ExtractMultiValuesToPoints(inPointFeatures, full_dirs)
+path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010\\cooler_test20231010.gdb" inPointFeatures = "point.shp"  full_dirs = []  for file in dir_list:     full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file)     full_dirs.append(full_file) 	 arcpy.sa.ExtractMultiValuesToPoints(inPointFeatures, full_dirs)
+arcpy.sa.ExtractMultiValuesToPoints("point", full_dirs)
+path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010\\cooler_test20231010.gdb" inPointFeatures = "point"  full_dirs = []  for file in dir_list:     full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file)     full_dirs.append(full_file) 	 arcpy.sa.ExtractValuesToTable_ga(inPointFeatures, full_dirs, "D:\\thermal_test20231010\\temps.dbf")
+path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010\\cooler_test20231010.gdb" inPointFeatures = "point"  full_dirs = []  for file in dir_list: 	full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file) 	full_dirs.append(full_file) 	 arcpy.sa.ExtractValuesToTable_ga(inPointFeatures, full_dirs, "D:\\thermal_test20231010\\temps.dbf")
+import os  path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010\\cooler_test20231010.gdb" inPointFeatures = "point"  full_dirs = []  for file in dir_list: 	full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file) 	full_dirs.append(full_file) 	 arcpy.sa.ExtractValuesToTable_ga(inPointFeatures, full_dirs, "D:\\thermal_test20231010\\temps.dbf")
+import os  path = "D:\\thermal_test20231010\\photos_20231010" dir_list = os.listdir(path)  arcpy.env.workspace = "D:\\thermal_test20231010\\cooler_test20231010.gdb" inPointFeatures = "point"  full_dirs = []  for file in dir_list: 	full_file = os.path.join("D:\\thermal_test20231010\\photos_20231010", file) 	full_dirs.append(full_file) 	 arcpy.ExtractValuesToTable_ga(inPointFeatures, full_dirs, "D:\\thermal_test20231010\\temps.dbf")
